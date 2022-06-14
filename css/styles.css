@@ -1,0 +1,448 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*HTML INICIO*/
+
+.gridInicio{
+    display: grid;
+    grid-template-columns: 0.1fr 3fr;
+    grid-template-rows: 1fr 2fr 0.2;
+    grid-template-areas: "headerinicio headerinicio"
+                          "asideinicio maininicio"
+                          "footerinicio footerinicio" ;
+}
+
+.headerInicio{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    grid-area: headerinicio;
+}
+
+.imgHeaderGeneral{
+    width: 10rem;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    background-color: rgb(235, 59, 235);
+    font-family: 'Calistoga', cursive; 
+    font-size: 13px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* PSEUDOCLASE HOVER */
+
+li:hover{
+    background-color: rgb(51, 3, 51);
+}
+
+.h1General:hover{
+    color: rgb(190, 22, 190);
+}
+
+.mainInicio{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 198, 241);
+    text-align: center;
+    grid-area: maininicio;
+    height: 100vh;
+}
+
+.bienvenidos{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.imgCialoInicio{
+    width: 100%;
+}
+
+/*ANIMACIONES */
+
+.imgCialoInicio{
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 120s;
+}
+
+@keyframes logo{
+    from{
+        transform:rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.asideInicio{
+    grid-area: asideinicio;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 100, 255);
+}
+
+.divAsideInicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: table-column;
+}
+
+.instagramInicio, .facebookInicio{
+    margin: 5px;
+}
+
+.logoInstagramInicio, .logoFacebookInicio{
+    width: 30px;
+}
+
+.footerInicio{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    padding: 1rem;
+    grid-area: footerinicio;
+}
+
+.h3InicioFooter{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+}
+
+@media screen and (min-width:600px){
+
+    .imgHeaderGeneral{
+        width: 12rem;
+    }
+    header nav ul li{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: 25px;
+    }
+
+    .ulGeneral{
+        display: flex;
+        justify-content: space-evenly}
+}
+
+@media screen and (min-width:1024px){
+    .imgHeaderGeneral{
+        width: 18rem;
+    }
+}
+
+/*HTML CATALOGO*/
+
+.gridCatalogo{
+    display: grid;
+    grid-template-columns: 0.2fr 3fr;
+    grid-template-rows: 1fr 2fr 0.2;
+    grid-template-areas: "headercatalogo headercatalogo headercatalogo headercatalogo"
+                           "asidecatalogo maincatalogo maincatalogo maincatalogo"
+                           "footercatalogo footercatalogo footercatalogo footercatalogo";
+}
+.headerCatalogo{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: rgb(36, 6, 36);
+    grid-area: headercatalogo;
+}
+
+.h1General{
+    font-size: 20px;
+}
+
+.mainCatalogo{
+    background-color: rgb(241, 198, 241);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: maincatalogo;
+}
+
+.divCatalogo{
+    list-style: none;
+    text-align: center;
+    width: 20rem;
+    height: 30rem;
+    border: 5px solid rgba(196, 152, 185, 0.986);
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgba(196, 152, 185, 0.986);
+}
+
+.imgUnoCatalogo{
+    width: 100%;
+    display: flex;
+}
+
+.imgDosCatalogo{
+    width: 100%;
+}
+
+.imgTresCatalogo{
+    width: 100%;
+}
+
+.imgCuatroCatalogo{
+    width: 80%;
+}
+
+.imgCincoCatalogo{
+    width: 100%;
+}
+
+.imgSeisCatalogo{
+    width: 100%;
+}
+
+.h3MainCatalogo{
+    font-size: 25px;
+    margin: 15px;
+}
+
+.h4MainCatalogo{
+    margin: 20px;
+}
+
+.asideCatalogo{
+    grid-area: asidecatalogo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 100, 255);
+}
+
+.divAsideCatalogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: table-column;
+}
+
+.instagramCatalogo, .facebookCatalogo{
+    margin: 5px;
+}
+
+.logoInstagramCatalogo, .logoFacebookCatalogo{
+    width: 30px;
+}
+
+.footerCatalogo{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    grid-area: footercatalogo;
+    padding: 2rem;
+}
+
+.h3CatalogoFooter{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+}
+
+.instagramCatalogo, .facebookCatalogo{
+    font-size: 20px;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:600px){
+    .h1General{
+        font-size: 29px;
+    }
+}
+
+/* HTML CONOCENOS*/
+ 
+.headerConocenos{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: rgb(36, 6, 36);
+}
+
+.bodyConocenos{
+    background-image: url(../img/sala-de-estar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bodyConocenos{
+        background-attachment: fixed;
+    }
+
+.mainConocenos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.loremConocenos{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(241, 198, 241);
+    font-size: x-large;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgb(235, 59, 235);
+    margin: 50px;
+    color: rgb(12, 0, 9);
+}
+
+/*  GRADIANTES */
+.loremConocenos{
+    background: radial-gradient(circle, rgb(248, 239, 161), violet);
+}
+
+.footerConocenos{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    font-size: x-large;
+}
+
+.h3Conocenos{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+}
+
+.instagramConocenos, .facebookConocenos{
+    font-size: 20px;
+    background-color:rgb(235, 59, 235);
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    }
+    
+/* HTML CONTACTO*/
+
+.headerContacto{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: rgb(36, 6, 36);
+    grid-area: headercatalogo;
+}
+
+.mainContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 198, 241);
+    text-align: center;
+    background-image: url(../img/Cialodeco-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10rem;
+}
+
+.formContacto{
+    margin: 0 auto;
+}
+
+.footerContacto{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+}
+
+.h3Contacto{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+}
+
+.instagramContacto, .facebookContacto{
+    font-size: 20px;
+    background-color:rgb(235, 59, 235);
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/*HTML OPINIONES*/
+
+.headerOpiniones{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    align-items: center;
+    font-family: 'Calistoga', cursive;
+    color: rgb(36, 6, 36);
+    grid-area: headercatalogo;
+    height: 30%;
+}
+
+.mainOpiniones{
+    display: flex;
+    background-color: rgb(241, 198, 241);
+    text-align: center; 
+    padding: 2rem;
+    flex-wrap: nowrap;
+}
+
+.divOpinionesUno{
+    background-color: rgb(235, 59, 235);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.divOpinionesDos{
+    background-color: rgb(235, 59, 235);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.divOpinionesTres{
+    background-color: rgb(235, 59, 235);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.h3MainOpiniones{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.h2MainOpiniones{
+    background-color: plum;
+    font-size: 40px ;
+}
+
+.footerOpiniones{
+    background-color: rgb(214, 182, 214);
+    text-align: center;
+    font-size: x-large;
+}
+
+.h3Opiniones{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+}
+
+.instagramOpiniones, .facebookOpiniones{
+    font-size: 20px;
+    background-color:rgb(235, 59, 235);
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
