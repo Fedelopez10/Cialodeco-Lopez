@@ -25,7 +25,7 @@
     width: 10rem;
 }
 
- header nav ul li{
+/* header nav ul li{
     list-style: none;
     display: inline-block;
     background-color: rgb(235, 59, 235);
@@ -34,7 +34,7 @@
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
-}
+} */
 
 /* PSEUDOCLASE HOVER */
 
@@ -375,7 +375,7 @@ li:hover{
     border-radius: 10px;
 }
 
-/*HTML OPINIONES */
+/*HTML OPINIONES 
 
 .headerOpiniones{
     background-color: rgb(214, 182, 214);
@@ -432,4 +432,16 @@ li:hover{
     padding: 5px;
     display: inline-block;
     border-radius: 10px;
+} */
+
+.headerOpiniones{
+    background-color: rgb(214, 182, 214);
+}
+
+.mainOpiniones{
+    background-color: rgb(241, 198, 241);
+}
+
+.footerOpiniones{
+    background-color: rgb(214, 182, 214);
 }

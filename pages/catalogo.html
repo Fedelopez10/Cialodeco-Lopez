@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Catalogo - Cialo deco</title>
 </head>
@@ -14,22 +18,45 @@
         <a href="../index.html"><img src="../img/Cialodeco-removebg-preview.png" alt="imagen de logo de cialo deco" class="imgHeaderGeneral">
         </a>
         <h1 class="h1General">CATALOGO</h1>
-        <nav class="catalogoCeluLi">
-            <ul class="ulGeneral">
-                <li>
+        <nav class="navbar navbar-expand-lg bg-nav">
+            <div class="container-fluid">
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse row" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item col-3">
+                    <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item col-3">
+                    <a class="nav-link active" href="../pages/conocenos.html">Conocenos</a>
+                  </li>
+                  <li class="nav-item col-3">
+                    <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item col-3">
+                    <a class="nav-link active" href="../pages/contacto.html">Opiniones</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     <!--   <nav class="col">
+            <ul class="d-flex list-unstyled">
+                <li  class="m-2">
                     <a href="../pages/catalogo.html">Catalogo</a>
                 </li>
-                <li>
+                <li class="m-2">
                     <a href="../pages/conocenos.html">Conocenos</a>
                 </li>
-                <li>
+                <li class="m-2">
                     <a href="../pages/contacto.html">Contacto</a>
                 </li>
-                <li>
+                <li class="m-2">
                     <a href="../pages/opiniones.html">Opiniones</a>
                 </li>
             </ul>
-        </nav>
+        </nav>  -->
     </header>
 
     <main class="mainCatalogo">
@@ -91,6 +118,8 @@
         <h3 class="h3CatalogoFooter">Todos los derechos reservados</h3>
     </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>
