@@ -25,17 +25,6 @@
     width: 10rem;
 }
 
-/* header nav ul li{
-    list-style: none;
-    display: inline-block;
-    background-color: rgb(235, 59, 235);
-    font-family: 'Calistoga', cursive; 
-    font-size: 13px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-} */
-
 /* PSEUDOCLASE HOVER */
 
 li:hover{
@@ -87,7 +76,7 @@ li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 100, 255);
+    background-color: rgb(241, 198, 241)
 }
 
 .divAsideInicio{
@@ -97,11 +86,16 @@ li:hover{
     display: table-column;
 }
 
-.instagramInicio, .facebookInicio{
+.divInstagram, .divFacebook{
+    font-size: 20px;
+    background-color:rgb(235, 59, 235);
     margin: 5px;
-}
+    padding: 5px;
+    display: inline-block;
+    border-radius: 10px;
+    }
 
-.logoInstagramInicio, .logoFacebookInicio{
+.logoInstagram, .logoFacebook{
     width: 30px;
 }
 
@@ -171,6 +165,10 @@ li:hover{
     grid-area: maincatalogo;
 }
 
+.card{
+    background-color: plum;
+}
+
 .divCatalogo{
     list-style: none;
     text-align: center;
@@ -221,7 +219,7 @@ li:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 100, 255);
+    background-color: rgb(241, 198, 241)
 }
 
 .divAsideCatalogo{
@@ -229,14 +227,6 @@ li:hover{
     align-items: center;
     justify-content: center;
     display: table-column;
-}
-
-.instagramCatalogo, .facebookCatalogo{
-    margin: 5px;
-}
-
-.logoInstagramCatalogo, .logoFacebookCatalogo{
-    width: 30px;
 }
 
 .footerCatalogo{
@@ -318,30 +308,19 @@ li:hover{
     text-align: center;
     font-family: 'Calistoga', cursive;
 }
-
-.instagramConocenos, .facebookConocenos{
-    font-size: 20px;
-    background-color:rgb(235, 59, 235);
-    margin: 5px;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 10px;
-    }
     
-/* HTML CONTACTO*/
+/* HTML CONTACTO */
 
 .headerContacto{
     background-color: rgb(214, 182, 214);
     text-align: center;
     font-family: 'Calistoga', cursive;
     color: rgb(36, 6, 36);
-    grid-area: headercatalogo;
 }
 
 .mainContacto{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     background-color: rgb(241, 198, 241);
     text-align: center;
@@ -353,6 +332,7 @@ li:hover{
 
 .formContacto{
     margin: 0 auto;
+    background-color: antiquewhite;
 }
 
 .footerContacto{
@@ -360,7 +340,7 @@ li:hover{
     text-align: center;
 }
 
-.h3Contacto{
+ .h3Contacto{
     font-size: 25px;
     text-align: center;
     font-family: 'Calistoga', cursive;
@@ -373,9 +353,9 @@ li:hover{
     padding: 5px;
     display: inline-block;
     border-radius: 10px;
-}
+} 
 
-/*HTML OPINIONES 
+/*HTML OPINIONES */
 
 .headerOpiniones{
     background-color: rgb(214, 182, 214);
@@ -432,16 +412,4 @@ li:hover{
     padding: 5px;
     display: inline-block;
     border-radius: 10px;
-} */
-
-.headerOpiniones{
-    background-color: rgb(214, 182, 214);
-}
-
-.mainOpiniones{
-    background-color: rgb(241, 198, 241);
-}
-
-.footerOpiniones{
-    background-color: rgb(214, 182, 214);
 }
