@@ -3,7 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
 /* HTML INICIO*/
 
 .gridInicio{
@@ -18,16 +17,14 @@
 .headerInicio{
     background-color: rgb(214, 182, 214);
     text-align: center;
+    align-items: center;
+    font-family: 'Calistoga', cursive;
+    color: rgb(36, 6, 36);
     grid-area: headerinicio;
 }
 
 .imgHeaderGeneral{
     width: 10rem;
-}
-
-
-.liGeneral{
-    margin-left: 200px;
 }
 
 /* PSEUDOCLASE HOVER */
@@ -127,6 +124,7 @@ li:hover{
     .imgHeaderGeneral{
         width: 18rem;
     }
+
     /*ANIMACIONES */
 
 .imgCialoInicio{
@@ -144,18 +142,57 @@ li:hover{
         transform: rotate(360deg);
     }
 }
+
+
+
+.sectionCat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img-1 img-2 img-3"
+                         "img-4 img-5 img-6";
 }
 
-/*HTML CATALOGO*/
+.img-1{
+    grid-area: img-1;
+}
 
-.gridCatalogo{
+.img-2{
+    grid-area: img-2;
+}
+
+.img-3{
+    grid-area: img-3;
+}
+
+.img-4{
+    grid-area: img-4;
+}
+
+.img-5{
+    grid-area: img-5;
+}
+
+.img-6{
+    grid-area: img-6;
+}
+}
+
+/*HTML CATALOGO */
+
+/* .gridCatalogo{
     display: grid;
     grid-template-columns: 0.2fr 3fr 1fr;
     grid-template-rows: 1fr 2fr 0.2 1fr;
     grid-template-areas: "headercatalogo headercatalogo headercatalogo headercatalogo"
                            "maincatalogo maincatalogo maincatalogo maincatalogo"
                            "footercatalogo footercatalogo footercatalogo footercatalogo";
+} */
+
+.gridCatalogo{
+    margin: 0%;
 }
+
 .headerCatalogo{
     background-color: rgb(214, 182, 214);
     text-align: center;
@@ -230,6 +267,11 @@ li:hover{
     background: transparent;
     border: 2px solid whitesmoke;
     border-radius: 6px;
+}
+
+.btn:hover{
+    background-color: rgb(240, 71, 240);
+    border:rgb(240, 71, 240) ;
 }
 
 .footerCatalogo{
@@ -322,10 +364,11 @@ li:hover{
 
 .mainContacto{
     display: flex;
+    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
     background-color: rgb(241, 198, 241);
-    text-align: center;
+    align-items: center;
     padding: 10rem;
 }
 
@@ -379,8 +422,9 @@ li:hover{
     align-items: center;
     font-family: 'Calistoga', cursive;
     color: rgb(36, 6, 36);
-    grid-area: headercatalogo;
     height: 30%;
+    max-width: 100vw;
+    margin: 0;
 }
 
 .mainOpiniones{
