@@ -1,17 +1,17 @@
-*{
+  *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
-/*HTML INICIO*/
+/* HTML INICIO*/
 
 .gridInicio{
     display: grid;
     grid-template-columns: 0.1fr 3fr;
     grid-template-rows: 1fr 2fr 0.2;
     grid-template-areas: "headerinicio headerinicio"
-                          "asideinicio maininicio"
+                          "maininicio maininicio"
                           "footerinicio footerinicio" ;
 }
 
@@ -23,6 +23,11 @@
 
 .imgHeaderGeneral{
     width: 10rem;
+}
+
+
+.liGeneral{
+    margin-left: 200px;
 }
 
 /* PSEUDOCLASE HOVER */
@@ -53,23 +58,7 @@ li:hover{
     width: 100%;
 }
 
-/*ANIMACIONES */
 
-.imgCialoInicio{
-    animation-name: logo;
-    animation-iteration-count: infinite;
-    animation-duration: 120s;
-}
-
-@keyframes logo{
-    from{
-        transform:rotate(0);
-    }
-
-    to{
-        transform: rotate(360deg);
-    }
-}
 
 .asideInicio{
     grid-area: asideinicio;
@@ -133,6 +122,23 @@ li:hover{
     .imgHeaderGeneral{
         width: 18rem;
     }
+    /*ANIMACIONES */
+
+.imgCialoInicio{
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-duration: 120s;
+}
+
+@keyframes logo{
+    from{
+        transform:rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
 }
 
 /*HTML CATALOGO*/
@@ -333,6 +339,7 @@ li:hover{
 .formContacto{
     margin: 0 auto;
     background-color: antiquewhite;
+    border-radius: 10px;
 }
 
 .footerContacto{
@@ -412,4 +419,4 @@ li:hover{
     padding: 5px;
     display: inline-block;
     border-radius: 10px;
-}
+} 
