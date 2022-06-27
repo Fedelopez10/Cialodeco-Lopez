@@ -58,16 +58,6 @@ li:hover{
     width: 100%;
 }
 
-
-
-.asideInicio{
-    grid-area: asideinicio;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(241, 198, 241)
-}
-
 .divAsideInicio{
     display: flex;
     align-items: center;
@@ -75,17 +65,32 @@ li:hover{
     display: table-column;
 }
 
-.divInstagram, .divFacebook{
+.divFacebook, .divInstagram{
+    display: inline-block;
+}
+
+.divFacebook:hover{
     font-size: 20px;
     background-color:rgb(235, 59, 235);
     margin: 5px;
     padding: 5px;
-    display: inline-block;
     border-radius: 10px;
     }
 
-.logoInstagram, .logoFacebook{
+.divInstagram:hover{
+    font-size: 20px;
+    background-color:rgb(235, 59, 235);
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    }
+    
+.logoFacebook{
     width: 30px;
+}
+
+.logoInstagram{
+    width: 40px;
 }
 
 .footerInicio{
@@ -145,10 +150,10 @@ li:hover{
 
 .gridCatalogo{
     display: grid;
-    grid-template-columns: 0.2fr 3fr;
-    grid-template-rows: 1fr 2fr 0.2;
+    grid-template-columns: 0.2fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr 0.2 1fr;
     grid-template-areas: "headercatalogo headercatalogo headercatalogo headercatalogo"
-                           "asidecatalogo maincatalogo maincatalogo maincatalogo"
+                           "maincatalogo maincatalogo maincatalogo maincatalogo"
                            "footercatalogo footercatalogo footercatalogo footercatalogo";
 }
 .headerCatalogo{
@@ -220,26 +225,17 @@ li:hover{
     margin: 20px;
 }
 
-.asideCatalogo{
-    grid-area: asidecatalogo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(241, 198, 241)
-}
-
-.divAsideCatalogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: table-column;
+.btn{
+    color: black;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 6px;
 }
 
 .footerCatalogo{
     background-color: rgb(214, 182, 214);
     text-align: center;
     grid-area: footercatalogo;
-    padding: 2rem;
 }
 
 .h3CatalogoFooter{
@@ -300,7 +296,7 @@ li:hover{
 
 /*  GRADIANTES */
 .loremConocenos{
-    background: radial-gradient(circle, rgb(248, 239, 161), violet);
+    background: radial-gradient(circle, rgb(189, 189, 189), violet);
 }
 
 .footerConocenos{
@@ -330,16 +326,29 @@ li:hover{
     align-items: center;
     background-color: rgb(241, 198, 241);
     text-align: center;
-    background-image: url(../img/Cialodeco-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-position: center;
     padding: 10rem;
+}
+
+.legendContacto{
+    background-color: rgb(214, 182, 214); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .formContacto{
     margin: 0 auto;
     background-color: antiquewhite;
     border-radius: 10px;
+}
+
+.divForm{
+    margin: 10px;
+    text-align: left;
+}
+
+.botonForm{
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .footerContacto{
@@ -375,7 +384,6 @@ li:hover{
 }
 
 .mainOpiniones{
-    display: flex;
     background-color: rgb(241, 198, 241);
     text-align: center; 
     padding: 2rem;
